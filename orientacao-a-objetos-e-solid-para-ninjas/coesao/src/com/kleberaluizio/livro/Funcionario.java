@@ -23,4 +23,8 @@ public class Funcionario {
     public Cargo getCargo() {
         return cargo;
     }
+
+    public RegraDeCalculo getRegra() {
+        return cargo.getRegra();
+    }
 }
