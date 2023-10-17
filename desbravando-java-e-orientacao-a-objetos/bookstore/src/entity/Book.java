@@ -1,15 +1,26 @@
 package entity;
 
 public class Book {
-    String title;
-    String description;
-    double value;
-    String isbn;
-    Writer writer;
+    private String title;
+    private String description;
+    private double value;
+    private String isbn;
+    private Writer writer;
 
 
-    public void applyDiscountOf(double percentage){
+    public Book(Writer writer){
+        this();
+        this.writer = writer;
+    }
+    public Book(){
+        this.isbn = "000-00-00000-00-0";
+    }
+    public boolean applyDiscountOf(double percentage){
+        if(percentage > 0.3){
+            return false;
+        }
         this.value -= this.value * percentage;
+        return true;
     }
 
     public boolean hasWriter(){
@@ -26,5 +37,44 @@ public class Book {
         if(hasWriter()){
             writer.showDetails();
         }
+    }
+
+    public void setValue(double value){
+        this.value = value;
+    }
+    public double getValue(){
+        return this.value;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getIsbn() {
+        return isbn;
+    }
+
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
+    }
+
+    public Writer getWriter() {
+        return writer;
+    }
+
+    public void setWriter(Writer writer) {
+        this.writer = writer;
     }
 }

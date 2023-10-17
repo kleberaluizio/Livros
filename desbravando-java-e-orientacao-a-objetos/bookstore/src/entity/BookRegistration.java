@@ -4,34 +4,30 @@ public class BookRegistration {
     public static void main(String[] args) {
 
         Writer writer = new Writer();
-        writer.name = "Rodrigo Turini";
-        writer.email = "rodrigo.turini@caelum.com.br";
-        writer.cpf = "123.456.789-10";
+        writer.setName("Rodrigo Turini");
+        writer.setEmail("rodrigo.turini@caelum.com.br");
+        writer.setCpf("123.456.789-10");
 
-        Book book = new Book();
-        book.title = "Java 8 Prático";
-        book.description = "Novos recursos da linguagem";
-        book.value = 59.90;
-        book.isbn = "978-85-66250-46-6";
-
-        book.writer = writer;
+        Book book = new Book(writer);
+        book.setTitle("Java 8 Prático");
+        book.setDescription("Novos recursos da linguagem");
+        book.setValue(59.90);
+        book.setIsbn("978-85-66250-46-6");
 
         book.showDetails();
 
         Writer otherWriter = new Writer();
-        otherWriter.name = "Paulo Silveira";
-        otherWriter.email = "paulo.silveira@caelum.com.br";
-        otherWriter.cpf = "123.456.789-11";
+        otherWriter.setName("Paulo Silveira");
+        otherWriter.setEmail("paulo.silveira@caelum.com.br");
+        otherWriter.setCpf("123.456.789-11");
 
 
-        Book otherbook = new Book();
-        otherbook.title = "Lógica de programação";
-        otherbook.description = "Crie seus primeiros programas";
-        otherbook.value = 59.90;
-        otherbook.isbn = "978-85-66250-22-0";
+        Book otherBook = new Book(otherWriter);
+        otherBook.setTitle("Lógica de programação");
+        otherBook.setDescription("Crie seus primeiros programas");
+        otherBook.setValue(59.90);
+        otherBook.setIsbn("978-85-66250-22-0");
 
-        otherbook.writer = otherWriter;
-
-        otherbook.showDetails();
+        otherBook.showDetails();
     }
 }
