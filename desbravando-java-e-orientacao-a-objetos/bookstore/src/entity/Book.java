@@ -9,7 +9,7 @@ public class Book {
 
 
     public Book(Writer writer){
-        this();
+        this(); // Call empty constructor
         this.writer = writer;
     }
     public Book(){
