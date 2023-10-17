@@ -8,8 +8,12 @@ public class Book {
     Writer writer;
 
 
-    public void applyDiscountOf(double percent){
-        this.value -= value * percent;
+    public void applyDiscountOf(double percentage){
+        this.value -= this.value * percentage;
+    }
+
+    public boolean hasWriter(){
+        return this.writer != null;
     }
     void showDetails(){
         String message ="Showing book's information:";
@@ -18,6 +22,9 @@ public class Book {
         System.out.println("Description: " + description);
         System.out.println("Value: " + value);
         System.out.println("ISBN: " + isbn);
-        writer.showDetails();
+
+        if(hasWriter()){
+            writer.showDetails();
+        }
     }
 }
