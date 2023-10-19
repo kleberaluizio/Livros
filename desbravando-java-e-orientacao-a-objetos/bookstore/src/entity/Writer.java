@@ -5,6 +5,14 @@ public class Writer {
     private String email;
     private String cpf;
 
+    public Writer(String name){
+        this.name = name;
+    }
+    public Writer(){
+
+    }
+
+
     void showDetails(){
         System.out.println("Showing Writer's information:");
         System.out.println("Name: " + name);
