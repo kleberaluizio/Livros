@@ -1,21 +1,24 @@
 package entity.revistas;
 
+import entity.Product;
+import entity.Promotional;
 import entity.editora.Editora;
 
-public class Magazine
+public class Magazine implements Product, Promotional
 {
 	private String name;
 	private String description;
 	private double value;
 	private Editora editora;
 
+	@Override
 	public boolean applyDiscountOf(double percentage){
 		if(percentage > 0.1){
-			return false;
+			return true;
 		}
 		double discount = getValue() * percentage;
 		setValue(getValue() - discount);
-		return true;
+		return false;
 	}
 	public String getName()
 	{
@@ -56,4 +59,6 @@ public class Magazine
 	{
 		this.editora = editora;
 	}
+
+
 }

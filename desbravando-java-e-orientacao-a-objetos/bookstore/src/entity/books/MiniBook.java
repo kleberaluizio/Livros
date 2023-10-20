@@ -1,5 +1,6 @@
 package entity.books;
 
+import entity.Promotional;
 import entity.Writer;
 
 public class MiniBook extends Book
@@ -8,9 +9,4 @@ public class MiniBook extends Book
 		super(writer);
 	}
 
-	@Override
-	public boolean applyDiscountOf(double percentage)
-	{
-		return false;
-	}
 }

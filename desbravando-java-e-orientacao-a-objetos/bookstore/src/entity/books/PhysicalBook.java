@@ -1,8 +1,9 @@
 package entity.books;
 
+import entity.Promotional;
 import entity.Writer;
 
-public class PhysicalBook extends Book
+public class PhysicalBook extends Book implements Promotional
 {
 	public PhysicalBook(Writer writer){
 		super(writer);
@@ -15,11 +16,11 @@ public class PhysicalBook extends Book
 	@Override
 	public boolean applyDiscountOf(double percentage){
 		if(percentage > 0.3){
-			return false;
+			return true;
 		}
 		double discount = getValue() * percentage;
 		setValue(getValue() - discount);
 		System.out.println("Applying physical book discount");
-		return true;
+		return false;
 	}
 }
