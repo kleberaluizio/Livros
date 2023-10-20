@@ -1,6 +1,6 @@
 package entity;
 
-public class Book {
+public abstract class Book {
     private String title;
     private String description;
     private double value;

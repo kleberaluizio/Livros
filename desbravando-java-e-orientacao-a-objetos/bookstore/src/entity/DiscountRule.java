@@ -6,7 +6,7 @@ public class DiscountRule {
 
         Writer writer = new Writer("Rodrigo Turini");
 
-        Book book = new Book(writer);
+        PhysicalBook book = new PhysicalBook(writer);
         book.setValue(59.90);
 
         if(!book.applyDiscountOf(0.3)){
