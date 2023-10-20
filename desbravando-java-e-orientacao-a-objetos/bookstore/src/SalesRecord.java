@@ -1,4 +1,6 @@
-package entity;
+import entity.books.Ebook;
+import entity.books.PhysicalBook;
+import entity.Writer;
 
 public class SalesRecord
 {

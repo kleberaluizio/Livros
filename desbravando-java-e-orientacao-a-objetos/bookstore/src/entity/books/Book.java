@@ -1,4 +1,6 @@
-package entity;
+package entity.books;
+
+import entity.Writer;
 
 public abstract class Book {
     private String title;
@@ -15,18 +17,12 @@ public abstract class Book {
     public Book(){
         this.isbn = "000-00-00000-00-0";
     }
-    public boolean applyDiscountOf(double percentage){
-        if(percentage > 0.3){
-            return false;
-        }
-        this.value -= this.value * percentage;
-        return true;
-    }
+    public abstract boolean applyDiscountOf(double percentage);
 
     public boolean hasWriter(){
         return this.writer != null;
     }
-    void showDetails(){
+    public void showDetails(){
         String message ="Showing book's information:";
         System.out.println(message);
         System.out.println("Title: " + title);

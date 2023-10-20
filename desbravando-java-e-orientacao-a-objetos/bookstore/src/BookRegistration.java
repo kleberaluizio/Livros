@@ -1,4 +1,6 @@
-package entity;
+import entity.books.Book;
+import entity.books.PhysicalBook;
+import entity.Writer;
 
 public class BookRegistration {
     public static void main(String[] args) {
@@ -8,7 +10,7 @@ public class BookRegistration {
         writer.setEmail("rodrigo.turini@caelum.com.br");
         writer.setCpf("123.456.789-10");
 
-        PhysicalBook book = new PhysicalBook(writer);
+        Book book = new PhysicalBook(writer);
         book.setTitle("Java 8 Prático");
         book.setDescription("Novos recursos da linguagem");
         book.setValue(59.90);
@@ -22,7 +24,7 @@ public class BookRegistration {
         otherWriter.setCpf("123.456.789-11");
 
 
-        PhysicalBook otherBook = new PhysicalBook(otherWriter);
+        Book otherBook = new PhysicalBook(otherWriter);
         otherBook.setTitle("Lógica de programação");
         otherBook.setDescription("Crie seus primeiros programas");
         otherBook.setValue(59.90);

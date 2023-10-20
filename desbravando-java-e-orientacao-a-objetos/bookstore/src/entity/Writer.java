@@ -13,7 +13,7 @@ public class Writer {
     }
 
 
-    void showDetails(){
+    public void showDetails(){
         System.out.println("Showing Writer's information:");
         System.out.println("Name: " + name);
         System.out.println("Email: " + email);

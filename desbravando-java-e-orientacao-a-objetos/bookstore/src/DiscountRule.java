@@ -1,4 +1,8 @@
-package entity;
+import entity.*;
+import entity.books.Book;
+import entity.books.Ebook;
+import entity.books.MiniBook;
+import entity.books.PhysicalBook;
 
 public class DiscountRule {
 
@@ -6,7 +10,7 @@ public class DiscountRule {
 
         Writer writer = new Writer("Rodrigo Turini");
 
-        PhysicalBook book = new PhysicalBook(writer);
+        Book book = new PhysicalBook(writer);
         book.setValue(59.90);
 
         if(!book.applyDiscountOf(0.3)){
@@ -24,6 +28,14 @@ public class DiscountRule {
             System.out.println("Ebook's discount value: " + ebook.getValue());
         }
 
+        Book miniBook = new MiniBook(writer);
+        miniBook.setValue(39.90);
+
+        if(!miniBook.applyDiscountOf(0.3)){
+            System.out.println("MiniBook's discount can not be higher than 30%");
+        } else {
+            System.out.println("MiniBook's discount value: " + miniBook.getValue());
+        }
 
 
     }

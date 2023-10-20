@@ -1,4 +1,6 @@
-package entity;
+package entity.books;
+
+import entity.Writer;
 
 public class Ebook extends Book
 {
@@ -13,8 +15,10 @@ public class Ebook extends Book
 		if(percentage > 0.15){
 			return false;
 		}
+		double discount = getValue() * percentage;
+		setValue(getValue() - discount);
 		System.out.println("Applying ebook discount");
-		return super.applyDiscountOf(percentage);
+		return true;
 	}
 
 	public String getWaterMark()
