@@ -13,12 +13,12 @@ public class Ebook extends Book implements Promotional
 
 	public boolean applyDiscountOf(double percentage){
 		if(percentage > 0.15){
-			return true;
+			return false;
 		}
 		double discount = getValue() * percentage;
 		setValue(getValue() - discount);
 		System.out.println("Applying ebook discount");
-		return false;
+		return true;
 	}
 
 	public String getWaterMark()

@@ -16,11 +16,11 @@ public class PhysicalBook extends Book implements Promotional
 	@Override
 	public boolean applyDiscountOf(double percentage){
 		if(percentage > 0.3){
-			return true;
+			return false;
 		}
 		double discount = getValue() * percentage;
 		setValue(getValue() - discount);
 		System.out.println("Applying physical book discount");
-		return false;
+		return true;
 	}
 }
