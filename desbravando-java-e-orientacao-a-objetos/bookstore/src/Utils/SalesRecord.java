@@ -1,3 +1,5 @@
+package Utils;
+
 import entity.books.Ebook;
 import entity.books.PhysicalBook;
 import entity.Writer;
@@ -14,7 +16,7 @@ public class SalesRecord
 
 		Ebook ebook = new Ebook(writer);
 		ebook.setTitle("Test-Driven Development");
-		ebook.setValue(29.90);
+		ebook.setValue(39.90);
 
 		ShoppingCart cart = new ShoppingCart();
 		cart.add(physicalBook);

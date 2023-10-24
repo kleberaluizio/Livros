@@ -1,3 +1,5 @@
+package Utils;
+
 import entity.Product;
 import entity.books.Book;
 import entity.revistas.Magazine;
