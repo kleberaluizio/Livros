@@ -23,5 +23,7 @@ public class SalesRecord
 		cart.add(ebook);
 
 		System.out.println("Total " +  cart.getTotal());
+
+		cart.getProducts();
 	}
 }
