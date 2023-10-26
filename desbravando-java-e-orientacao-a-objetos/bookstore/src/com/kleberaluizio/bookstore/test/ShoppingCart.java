@@ -1,8 +1,6 @@
-package Utils;
+package com.kleberaluizio.bookstore.test;
 
-import entity.Product;
-import entity.books.Book;
-import entity.revistas.Magazine;
+import com.kleberaluizio.bookstore.entity.Product;
 
 public class ShoppingCart
 {

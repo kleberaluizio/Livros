@@ -1,4 +1,4 @@
-package entity.editora;
+package com.kleberaluizio.bookstore;
 
 public class Editora
 {

@@ -1,8 +1,8 @@
-package Utils;
+package com.kleberaluizio.bookstore.test;
 
-import entity.books.Ebook;
-import entity.books.PhysicalBook;
-import entity.Writer;
+import com.kleberaluizio.bookstore.entity.books.Ebook;
+import com.kleberaluizio.bookstore.entity.books.PhysicalBook;
+import com.kleberaluizio.bookstore.Writer;
 
 public class SalesRecord
 {

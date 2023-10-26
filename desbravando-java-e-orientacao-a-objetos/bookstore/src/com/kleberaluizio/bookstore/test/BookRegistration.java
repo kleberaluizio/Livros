@@ -1,8 +1,8 @@
-package Utils;
+package com.kleberaluizio.bookstore.test;
 
-import entity.books.Book;
-import entity.books.PhysicalBook;
-import entity.Writer;
+import com.kleberaluizio.bookstore.entity.books.Book;
+import com.kleberaluizio.bookstore.entity.books.PhysicalBook;
+import com.kleberaluizio.bookstore.Writer;
 
 public class BookRegistration {
     public static void main(String[] args) {

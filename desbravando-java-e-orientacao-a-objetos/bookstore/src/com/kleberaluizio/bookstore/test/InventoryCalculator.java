@@ -1,4 +1,4 @@
-package Utils;
+package com.kleberaluizio.bookstore.test;
 
 public class InventoryCalculator {
     public static void main(String[] args) {

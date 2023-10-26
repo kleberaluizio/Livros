@@ -1,7 +1,6 @@
-package entity.books;
+package com.kleberaluizio.bookstore.entity.books;
 
-import entity.Promotional;
-import entity.Writer;
+import com.kleberaluizio.bookstore.Writer;
 
 public class MiniBook extends Book
 {

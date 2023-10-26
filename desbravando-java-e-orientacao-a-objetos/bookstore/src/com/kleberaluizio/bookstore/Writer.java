@@ -1,4 +1,4 @@
-package entity;
+package com.kleberaluizio.bookstore;
 
 public class Writer {
     private String name;

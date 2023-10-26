@@ -1,8 +1,8 @@
-package entity.revistas;
+package com.kleberaluizio.bookstore.entity.revistas;
 
-import entity.Product;
-import entity.Promotional;
-import entity.editora.Editora;
+import com.kleberaluizio.bookstore.entity.Product;
+import com.kleberaluizio.bookstore.entity.Promotional;
+import com.kleberaluizio.bookstore.Editora;
 
 public class Magazine implements Product, Promotional
 {

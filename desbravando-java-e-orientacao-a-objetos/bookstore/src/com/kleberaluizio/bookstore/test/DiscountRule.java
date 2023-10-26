@@ -1,9 +1,9 @@
-package Utils;
+package com.kleberaluizio.bookstore.test;
 
-import entity.*;
-import entity.books.Ebook;
-import entity.books.MiniBook;
-import entity.books.PhysicalBook;
+import com.kleberaluizio.bookstore.Writer;
+import com.kleberaluizio.bookstore.entity.books.Ebook;
+import com.kleberaluizio.bookstore.entity.books.MiniBook;
+import com.kleberaluizio.bookstore.entity.books.PhysicalBook;
 
 public class DiscountRule {
 

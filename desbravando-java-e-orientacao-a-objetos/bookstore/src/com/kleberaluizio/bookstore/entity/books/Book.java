@@ -1,7 +1,7 @@
-package entity.books;
+package com.kleberaluizio.bookstore.entity.books;
 
-import entity.Product;
-import entity.Writer;
+import com.kleberaluizio.bookstore.entity.Product;
+import com.kleberaluizio.bookstore.Writer;
 
 public abstract class Book implements Product
 {

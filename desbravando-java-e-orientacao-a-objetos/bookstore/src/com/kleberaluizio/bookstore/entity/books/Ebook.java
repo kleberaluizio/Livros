@@ -1,7 +1,7 @@
-package entity.books;
+package com.kleberaluizio.bookstore.entity.books;
 
-import entity.Promotional;
-import entity.Writer;
+import com.kleberaluizio.bookstore.entity.Promotional;
+import com.kleberaluizio.bookstore.Writer;
 
 public class Ebook extends Book implements Promotional
 {
