@@ -1,4 +1,4 @@
-package com.kleberaluizio.bookstore.test;
+package com.kleberaluizio.bookstore.entity.schoppingcart;
 
 import com.kleberaluizio.bookstore.entity.Product;
 import java.util.ArrayList;
@@ -12,6 +12,7 @@ public class ShoppingCart
 	public void add(Product product)
 	{
 		this.products.add(product);
+		this.total += product.getValue();
 	}
 
 	public void remove(Product product)
