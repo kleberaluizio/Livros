@@ -33,5 +33,7 @@ public class BookRegistration {
         otherBook.setIsbn("978-85-66250-22-0");
 
         otherBook.showDetails();
+
+        Book testBook = new PhysicalBook(null);
     }
 }

@@ -2,6 +2,7 @@ package com.kleberaluizio.bookstore.entity.books;
 
 import com.kleberaluizio.bookstore.entity.Product;
 import com.kleberaluizio.bookstore.Writer;
+import com.kleberaluizio.bookstore.exceptions.NullWriterException;
 
 public abstract class Book implements Product
 {
@@ -15,6 +16,9 @@ public abstract class Book implements Product
 	public Book(Writer writer)
 	{
 		this(); // Call empty constructor
+		if(writer == null){
+			throw new NullWriterException("Book's writer can not be null!");
+		}
 		this.writer = writer;
 	}
 
@@ -33,7 +37,7 @@ public abstract class Book implements Product
 		String message = "Showing book's information:";
 		System.out.println(message);
 		System.out.println("Title: " + title);
-		System.out.println("Description: " + description);
+		if(description != null)System.out.println("Description: " + description);
 		System.out.println("Value: " + value);
 		System.out.println("ISBN: " + isbn);
 
@@ -91,5 +95,18 @@ public abstract class Book implements Product
 	public void setWriter(Writer writer)
 	{
 		this.writer = writer;
+	}
+
+	@Override
+	public int compareTo(Product otherProduct)
+	{
+		if(this.getValue() < otherProduct.getValue()){
+			return -1;
+		}
+		if(this.getValue() > otherProduct.getValue()){
+			return 1;
+		}
+		return 0;
+
 	}
 }

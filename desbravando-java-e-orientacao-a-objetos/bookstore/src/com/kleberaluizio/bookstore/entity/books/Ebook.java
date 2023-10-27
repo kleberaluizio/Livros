@@ -1,5 +1,6 @@
 package com.kleberaluizio.bookstore.entity.books;
 
+import com.kleberaluizio.bookstore.entity.Product;
 import com.kleberaluizio.bookstore.entity.Promotional;
 import com.kleberaluizio.bookstore.Writer;
 
@@ -30,4 +31,5 @@ public class Ebook extends Book implements Promotional
 	{
 		this.waterMark = waterMark;
 	}
+
 }

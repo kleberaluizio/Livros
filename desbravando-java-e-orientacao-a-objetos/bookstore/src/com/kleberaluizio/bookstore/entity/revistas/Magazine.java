@@ -1,8 +1,8 @@
 package com.kleberaluizio.bookstore.entity.revistas;
 
+import com.kleberaluizio.bookstore.Editora;
 import com.kleberaluizio.bookstore.entity.Product;
 import com.kleberaluizio.bookstore.entity.Promotional;
-import com.kleberaluizio.bookstore.Editora;
 
 public class Magazine implements Product, Promotional
 {
@@ -12,14 +12,17 @@ public class Magazine implements Product, Promotional
 	private Editora editora;
 
 	@Override
-	public boolean applyDiscountOf(double percentage){
-		if(percentage > 0.1){
+	public boolean applyDiscountOf(double percentage)
+	{
+		if (percentage > 0.1)
+		{
 			return true;
 		}
 		double discount = getValue() * percentage;
 		setValue(getValue() - discount);
 		return false;
 	}
+
 	public String getName()
 	{
 		return name;
@@ -45,6 +48,17 @@ public class Magazine implements Product, Promotional
 		return value;
 	}
 
+	@Override
+	public void showDetails()
+	{
+		String message = "Showing Magazine's information:";
+		System.out.println(message);
+		System.out.println("Title: " + name);
+		System.out.println("Description: " + description);
+		System.out.println("Value: " + value);
+
+	}
+
 	public void setValue(double value)
 	{
 		this.value = value;
@@ -61,4 +75,16 @@ public class Magazine implements Product, Promotional
 	}
 
 
+	@Override
+	public int compareTo(Product otherProduct)
+	{
+		if(this.getValue() < otherProduct.getValue()){
+			return -1;
+		}
+		if(this.getValue() > otherProduct.getValue()){
+			return 1;
+		}
+		return 0;
+
+	}
 }

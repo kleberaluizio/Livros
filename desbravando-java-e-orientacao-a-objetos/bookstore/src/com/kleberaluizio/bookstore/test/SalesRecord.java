@@ -1,8 +1,12 @@
 package com.kleberaluizio.bookstore.test;
 
+import com.kleberaluizio.bookstore.entity.Product;
 import com.kleberaluizio.bookstore.entity.books.Ebook;
 import com.kleberaluizio.bookstore.entity.books.PhysicalBook;
 import com.kleberaluizio.bookstore.Writer;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
 
 public class SalesRecord
 {
@@ -24,6 +28,12 @@ public class SalesRecord
 
 		System.out.println("Total " +  cart.getTotal());
 
-		cart.getProducts();
+		List<Product> products = cart.getProducts();
+
+		Collections.sort(products);
+		for (Product product : products)
+		{
+			product.showDetails();
+		}
 	}
 }

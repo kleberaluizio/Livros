@@ -1,5 +1,6 @@
 package com.kleberaluizio.bookstore.entity.books;
 
+import com.kleberaluizio.bookstore.entity.Product;
 import com.kleberaluizio.bookstore.entity.Promotional;
 import com.kleberaluizio.bookstore.Writer;
 
