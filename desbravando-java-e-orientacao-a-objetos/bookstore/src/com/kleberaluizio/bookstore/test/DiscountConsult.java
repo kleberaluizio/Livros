@@ -8,9 +8,11 @@ public class DiscountConsult
 	{
 		CouponManager manager = new CouponManager();
 
-		String coupon = "CUP1234";
-		if(manager.isCouponValid(coupon)){
+		String coupon = "cab11";
+		Double discount = manager.validateCoupon(coupon);
+		if(discount != null){
 			System.out.println(String.format("[%s] is a valid!",coupon));
+			System.out.println("Value " +discount);
 		} else{
 			System.out.println(String.format("[%s] is not a valid coupon!",coupon));
 		}
