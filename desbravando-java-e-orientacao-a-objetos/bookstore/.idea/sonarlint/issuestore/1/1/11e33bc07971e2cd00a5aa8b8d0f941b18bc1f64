@@ -1,0 +1,21 @@
+
+[
+java:S1854"9Remove this useless assignment to local variable "books".(”éØ•şÿÿÿÿ8‚ÛÇ¹¸1
+L
+java:S1481"*Remove this unused "books" local variable.(”éØ•şÿÿÿÿ8‰ÛÇ¹¸1
+W	java:S125"<This block of commented-out lines of code should be removed.(§ıí8‰ÛÇ¹¸1
+G	java:S106""+Replace this use of System.out by a logger.(Û“¢×8”×Í¹¸1
+L	java:S106+"+Replace this use of System.out by a logger.(Ë¹²Òıÿÿÿÿ8÷”Ï¹¸1
+X	java:S125-"<This block of commented-out lines of code should be removed.(‰¸ë—8 È¹¸1
+X	java:S1250"<This block of commented-out lines of code should be removed.(Ú°à¬8 È¹¸1
+X	java:S1258"<This block of commented-out lines of code should be removed.(†è8 È¹¸1
+L	java:S106>"+Replace this use of System.out by a logger.(ğÃàÀşÿÿÿÿ8ğäÏ¹¸1
+]	java:S125@"<This block of commented-out lines of code should be removed.(©à™¬ıÿÿÿÿ8„ È¹¸1
+W
+java:S1128	":Remove this unused import 'java.util.stream.DoubleStream'.(óÖĞ©8¾óÒ¹¸1
+Q
+java:S1128"4Remove this unused import 'java.util.stream.Stream'.(ó÷”8¿óÒ¹¸1
+Z
+java:S1144%"8Remove this unused private "compareAndSortBooks" method.(È´€“ıÿÿÿÿ8„ È¹¸1
+X
+java:S1144:"6Remove this unused private "filterBooksByName" method.(ä»Åøÿÿÿÿ8… È¹¸1

@@ -1,0 +1,8 @@
+
+@	java:S106"+Replace this use of System.out by a logger.(ñŒíÅ
+b
+java:S1128"GRemove this unused import 'com.kleberaluizio.bookstore.entity.Product'.(§ù×¤ÿÿÿÿÿ
+M
+java:S1128"2Remove this unused import 'java.util.Collections'.(¢³ïÓşÿÿÿÿ
+F
+java:S1128	"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ
