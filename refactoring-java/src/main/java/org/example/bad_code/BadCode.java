@@ -1,4 +1,4 @@
-package org.example.badCode;
+package org.example.bad_code;
 
 import java.util.ArrayList;
 import java.util.List;
