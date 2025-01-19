@@ -1,9 +1,9 @@
 package org.example.code_smell.characters;
 
 public class ObiWanKenobi extends SwCharacter {
-    @Override
-    public String getName() {
-        return "ObiWanKenobi";
+
+    public ObiWanKenobi() {
+        super( "ObiWanKenobi");
     }
 
     @Override
@@ -13,6 +13,6 @@ public class ObiWanKenobi extends SwCharacter {
 
     @Override
     public String getLightSaberColor() {
-        return "Red";
+        return "RED";
     }
 }

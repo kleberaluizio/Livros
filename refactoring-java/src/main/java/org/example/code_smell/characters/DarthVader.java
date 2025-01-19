@@ -1,9 +1,9 @@
 package org.example.code_smell.characters;
 
 public class DarthVader extends SwCharacter {
-    @Override
-    public String getName() {
-        return "Darth Vader";
+
+    public DarthVader() {
+        super( "Darth Vader");
     }
 
     @Override
@@ -13,6 +13,6 @@ public class DarthVader extends SwCharacter {
 
     @Override
     public String getLightSaberColor() {
-        return "blue";
+        return "BLUE";
     }
 }

@@ -1,9 +1,13 @@
 package org.example.code_smell.characters;
 
 public class SwCharacter {
-    private String name;
+    private final String name;
     private String lightSaberColor;
     private String birthPlace;
+
+    protected SwCharacter (String name) {
+        this.name = name;
+    }
 
     public String getName() {
         return name;
